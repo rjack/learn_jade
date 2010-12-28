@@ -5,5 +5,8 @@ html(xml:lang: "it")
 		title Hello #{name}
 	body
 		h1 Hello #{name}!
-		p Hope you are feeling good!
+		- if (mood == "happy")
+			p It's nice to see you're so happy!
+		- else
+			p Why so serious?
 		p See you around #{name}!
